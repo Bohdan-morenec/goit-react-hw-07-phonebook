@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import styles from "./FormContact.module.scss";
 import { connect } from "react-redux";
 import * as actions from "../../redux/contacts/contact-operations";
+import { getContacts } from "../../redux/contacts/contact-selectors";
 
 class FormContact extends Component {
   state = {
@@ -97,7 +98,7 @@ Function.defaultProps = {
 };
 
 const mapStateToProps = (state) => ({
-  contactsItems: state.contacts.items,
+  contactsItems: getContacts(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({

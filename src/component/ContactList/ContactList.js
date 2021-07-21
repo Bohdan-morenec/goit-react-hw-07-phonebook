@@ -3,15 +3,16 @@ import { connect } from "react-redux";
 import style from "./ContactList.module.scss";
 import * as actions from "../../redux/contacts/contact-operations";
 import { Component } from "react";
+import { filteredArrayContact } from "../../redux/contacts/contact-selectors";
 
 class ContactList extends Component {
-  filteredArrayContact = () => {
-    const filterValue = this.props.filter.toLowerCase();
+  // filteredArrayContact = () => {
+  //   const filterValue = this.props.filter.toLowerCase();
 
-    const filterText = (value) => value.toLowerCase().includes(filterValue);
+  //   const filterText = (value) => value.toLowerCase().includes(filterValue);
 
-    return this.props.contacts.filter(({ name }) => filterText(name));
-  };
+  //   return this.props.contacts.filter(({ name }) => filterText(name));
+  // };
 
   componentDidMount = () => {
     this.props.fetchContact();
@@ -20,7 +21,7 @@ class ContactList extends Component {
   render() {
     return (
       <ul className={style.list}>
-        {this.filteredArrayContact().map(({ name, number, id }) => (
+        {this.props.filteredArrayContact.map(({ name, number, id }) => (
           <li className={style.listItem} key={id}>
             <p className={style.name}>
               {name}: <span className={style.number}>{number}</span>
@@ -46,8 +47,7 @@ ContactList.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  filter: state.contacts.filter,
-  contacts: state.contacts.items,
+  filteredArrayContact: filteredArrayContact(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({

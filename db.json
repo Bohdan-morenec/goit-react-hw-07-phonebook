@@ -2,36 +2,6 @@
   "users": [
     {
       "name": "awdawd",
-      "number": "380985968518",
-      "id": "4acf02fd-f302-4be0-a623-71ea0b31fa33"
-    },
-    {
-      "name": "adad",
-      "number": "380985968518",
-      "id": "4726847a-d171-42de-b0f5-5000068ae0aa"
-    },
-    {
-      "name": "adad",
-      "number": "380985968518",
-      "id": "d9f03b99-e28a-46c1-b0e1-21e0d475030e"
-    },
-    {
-      "name": "awdawd",
-      "number": "380985968518",
-      "id": "37f281c5-4339-459e-9ec3-2890c3f0a3b8"
-    },
-    {
-      "name": "awdawd",
-      "number": "380985968518",
-      "id": "d267e802-d46a-4458-bce9-f36dee8bbd96"
-    },
-    {
-      "name": "awdawd",
-      "number": "1313123123",
-      "id": "b5b92b03-4586-406b-aded-8e464690e20f"
-    },
-    {
-      "name": "awdawd",
       "number": "1313123123",
       "id": "3517ae81-f939-4f88-a678-7c956e58a25e"
     },
@@ -79,6 +49,16 @@
       "name": "awdawdddd",
       "number": "12312313",
       "id": "9f050be2-ddbb-4eb1-8fbe-ec39a7e4645f"
+    },
+    {
+      "name": "awdawdds",
+      "number": "1231231323",
+      "id": "543f2625-3f28-4bc8-9662-f31e1735a208"
+    },
+    {
+      "name": "dawdd",
+      "number": "131312312331",
+      "id": "a8504db3-16ce-41ec-89e2-2458f03073d9"
     }
   ]
 }
