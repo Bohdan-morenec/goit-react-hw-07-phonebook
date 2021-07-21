@@ -34,8 +34,7 @@ class ContactList extends Component {
 
 ContactList.propTypes = {
   deleteContact: PropTypes.func.isRequired,
-  filter: PropTypes.string.isRequired,
-  contacts: PropTypes.array.isRequired,
+  filteredArrayContact: PropTypes.array.isRequired,
 };
 
 const mapStateToProps = (state) => ({

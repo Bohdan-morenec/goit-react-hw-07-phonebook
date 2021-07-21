@@ -20,7 +20,7 @@ const itemsReducer = createReducer([], {
     state.filter((todo) => todo.id !== payload),
 });
 
-const logerReducer = createReducer(false, {
+const loggerReducer = createReducer(false, {
   [addContactRequest]: () => true,
   [addСontactSuccess]: () => false,
   [aadContactError]: () => false,
@@ -39,5 +39,5 @@ const filterReducer = createReducer("", {
 export default combineReducers({
   items: itemsReducer,
   filter: filterReducer,
-  loger: logerReducer,
+  logger: loggerReducer,
 });
