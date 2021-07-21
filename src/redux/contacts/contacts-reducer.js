@@ -13,19 +13,6 @@ import {
   fetchContactError,
 } from "../../redux/contacts/contacts-actions";
 
-// const itemsReducer = (state = [], { type, payload }) => {
-//   switch (type) {
-//     case "addСontact":
-//       return [...state, payload];
-
-//     case "deleteContact":
-//       return state.filter((todo) => todo.id !== payload);
-
-//     default:
-//       return state;
-//   }
-// };
-
 const itemsReducer = createReducer([], {
   [fetchСontactSuccess]: (_, { payload }) => payload,
   [addСontactSuccess]: (state, { payload }) => [...state, payload],
@@ -44,16 +31,6 @@ const logerReducer = createReducer(false, {
   [fetchСontactSuccess]: () => false,
   [fetchContactError]: () => false,
 });
-
-// const filterReducer = (state = "", { type, payload }) => {
-//   switch (type) {
-//     case "filterContact":
-//       return payload;
-
-//     default:
-//       return state;
-//   }
-// };
 
 const filterReducer = createReducer("", {
   [filterContact]: (_, { payload }) => payload,

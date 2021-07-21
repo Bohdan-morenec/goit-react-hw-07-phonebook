@@ -6,14 +6,6 @@ import { Component } from "react";
 import { filteredArrayContact } from "../../redux/contacts/contact-selectors";
 
 class ContactList extends Component {
-  // filteredArrayContact = () => {
-  //   const filterValue = this.props.filter.toLowerCase();
-
-  //   const filterText = (value) => value.toLowerCase().includes(filterValue);
-
-  //   return this.props.contacts.filter(({ name }) => filterText(name));
-  // };
-
   componentDidMount = () => {
     this.props.fetchContact();
   };
